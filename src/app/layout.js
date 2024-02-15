@@ -1,5 +1,6 @@
 import { Love_Light } from "next/font/google";
 import "stellarstyles.css";
+import './global.css'
 
 const love_Light = Love_Light({
   subsets: ["latin"],

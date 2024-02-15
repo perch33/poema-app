@@ -1,0 +1,162 @@
+body {
+  background-color: #fae1dd;
+}
+
+/* main */
+
+.container__main {
+  /* height: 100vh; */
+  position: relative;
+}
+
+/* cuadro de nombre */
+
+.container__principal {
+  position: relative;
+  margin: auto;
+  margin-top: 150px;
+  padding: 3em;
+  border-radius: 7px;
+  height: 350px;
+  width: 500px;
+  background-color: #fff;
+  z-index: 5;
+  outline: dashed;
+  outline-offset: -22px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__principal button {
+  width: 152px;
+  height: 50px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.container__principal label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.container__principal label input {
+  margin: 20px 0;
+  border-radius: 5px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media screen and (max-width: 769px) {
+  .container__principal {
+    height: 350px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container__principal {
+    height: 400px;
+  }
+
+  .container__principal label {
+    width: 95%;
+  }
+  .container__principal label input {
+    width: 90%;
+  }
+}
+/* texto corazón */
+
+.section__corazon {
+  overflow: hidden;
+  background-color: #fff;
+  height: 450px;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 7px;
+  width: 40%;
+  outline: dashed;
+  outline-offset: -22px;
+  padding: 3.3em;
+}
+
+.section__corazon h1 {
+  text-align: center;
+  font-size: 2.7rem;
+}
+.section__corazon p {
+  font-size: 1.9rem;
+  text-align: center;
+  line-height: 2.1rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 769px) {
+  .section__corazon {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section__corazon {
+    width: 80%;
+  }
+}
+
+/* image__copy */
+
+.image__copy {
+  display: block;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+/* mensaje__copiar */
+.mensaje__copiar{
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 769px) {
+  .mensaje__copiar{
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mensaje__copiar{
+    font-size: 0.6rem;
+  }
+}
+
+/* corazón aleatorio */
+.corazones__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.corazon {
+  position: absolute;
+  background-image: url(/favicon/icons8-heart.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  animation: moverCorazon 3s infinite linear;
+}
+
+@keyframes moverCorazon {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 1;
+  }
+}

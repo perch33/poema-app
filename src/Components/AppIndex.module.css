@@ -77,7 +77,7 @@
   background-color: #fff;
   height: 500px;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 100px;
   border-radius: 7px;
   width: 40%;
   outline: dashed;
@@ -104,7 +104,8 @@
 @media screen and (max-width: 480px) {
   .section__corazon {
     width: 90%;
-    height: 600px;
+    height: 550px;
+    padding: 2em;
   }
   .section__corazon h1 {
     font-size: 2.5rem;
